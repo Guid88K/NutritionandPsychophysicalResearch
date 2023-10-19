@@ -61,7 +61,8 @@
             "@auto-scripts"
         ],
         "fix": "vendor/bin/php-cs-fixer fix --allow-risky=yes",
-        "check": "vendor/bin/php-cs-fixer fix --allow-risky=yes --dry-run"
+        "check": "vendor/bin/php-cs-fixer fix --allow-risky=yes --dry-run",
+        "analyse": "vendor/bin/phpstan analyse"
     },
     "conflict": {
         "symfony/symfony": "*"
@@ -74,6 +75,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.35",
+        "phpstan/phpstan": "^1.10",
         "phpunit/phpunit": "*",
         "symfony/browser-kit": "6.3.*",
         "symfony/css-selector": "6.3.*",
